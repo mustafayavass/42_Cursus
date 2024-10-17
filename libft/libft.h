@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:56:29 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/17 14:16:55 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/17 15:13:43 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,11 @@ int ft_isprint(int c);
 int ft_tolower(int c);
 char    *ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
+int ft_strncmp(char *s1, char *s2, unsigned int n);
 void    *ft_memset(void *b, int c, size_t len);
 void    bzero(void *s, size_t n);
+void    *memcpy(void *restrict dst, const void *restrict src, size_t n);
+void    *memchr(const void *s, int c, size_t n);
+int memcmp(const void *s1, const void *s2, size_t n);
 
 #endif
