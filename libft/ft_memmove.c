@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 14:29:36 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/17 15:40:30 by myavas           ###   ########.fr       */
+/*   Created: 2024/10/17 15:18:20 by myavas            #+#    #+#             */
+/*   Updated: 2024/10/17 15:40:18 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memchr(const void *s, int c, size_t n)
+void    *ft_memmove(void *dst, const void *src, size_t len)
 {
-    unsigned char   *p = (unsigned char*)s;
-    
-    while (n--)
+    char    *d = dst;
+    const char  *s = src;
+    if(d < s)
     {
-        if(*p != (unsigned char*)s)
+        while(len--)
         {
-            p++;
-        }
-        else
-        {
-            return p;
+            *d++ = *s++;
         }
     }
-    return 0;
+    else
+    {
+        char    *lasts = s + (len-1);
+        char    *lastd = d + (len-1);
+
+        while (len--)
+        {
+            *lastd-- = *lasts--;
+        }
+    }
+    return dst;
 }
