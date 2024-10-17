@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:56:29 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/16 18:18:30 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/17 14:16:55 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ char    *ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int	ft_strncmp(char *s1, char *s2, unsigned int n);
 void    *ft_memset(void *b, int c, size_t len);
+void    bzero(void *s, size_t n);
 
 #endif
