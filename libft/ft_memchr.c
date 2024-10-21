@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 14:29:36 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/17 15:40:30 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/21 17:38:35 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void    *ft_memchr(const void *s, int c, size_t n)
 {

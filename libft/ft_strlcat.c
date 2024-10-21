@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:10:49 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/17 16:12:56 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/21 17:40:25 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

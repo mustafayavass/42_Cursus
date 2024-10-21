@@ -1,33 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 16:31:02 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/21 18:07:58 by myavas           ###   ########.fr       */
+/*   Created: 2024/10/21 17:42:51 by myavas            #+#    #+#             */
+/*   Updated: 2024/10/21 17:47:11 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strdup(char *src)
+char    *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int i = 0;
-	char    *res;
+    size_t	count;
+	size_t	size;
+	char	*tab;
 
-	while(src[i])
-		i++;
-	res = (char*)malloc(sizeof(*res) * i + 1);
-	if (res == NULL)
+	if (!s)
 		return (NULL);
-	i = 0;
-	while(src[i])
+	if ((unsigned int)ft_strlen(s) < start)
+		return (ft_strdup(""));
+	size = ft_strlen(s + start);
+	if (size < len)
+		len = size;
+	if (!(tab = (char *)malloc((len + 1) * sizeof(char))))
+		return (NULL);
+	count = 0;
+	while (count < len)
 	{
-		res[i] = src[i];
-		i++;
+		tab[count] = s[start + count];
+		count++;
 	}
-	res[i] = '\0';
-	return (res);
+	tab[count] = '\0';
+	return (tab);
 }

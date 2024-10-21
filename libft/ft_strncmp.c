@@ -6,11 +6,9 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:29:45 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/16 18:00:59 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/21 17:40:54 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

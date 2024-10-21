@@ -6,11 +6,9 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:16:15 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/16 17:42:34 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/21 17:40:44 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int ft_strlen(const char *s)
 {

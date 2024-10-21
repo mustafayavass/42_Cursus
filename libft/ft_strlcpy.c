@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:57:25 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/17 16:00:39 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/21 17:40:38 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

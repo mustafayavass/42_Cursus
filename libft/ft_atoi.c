@@ -6,11 +6,9 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:21:41 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/17 16:21:54 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/21 17:37:17 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_atoi(const char *str)
 {

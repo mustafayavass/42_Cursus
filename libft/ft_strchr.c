@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:58:30 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/10 16:19:03 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/21 17:40:12 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 char    *ft_strchr(const char *s, int c)
 {
