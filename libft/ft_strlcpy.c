@@ -6,24 +6,31 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:57:25 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/21 17:40:38 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/24 15:51:36 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	count;
+	size_t	i;
 
-	count = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	while (src[count] != '\0' && count < (size - 1))
+	i = 0;
+	if (dstsize == 0)
 	{
-		dest[count] = src[count];
-		count++;
+		while (src[i])
+			i++;
+		return (i);
 	}
-	dest[count] = '\0';
-	return (ft_strlen(src));
+	while (i < dstsize - 1 && src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	if (i < dstsize)
+		dst[i] = '\0';
+	while (src[i] != '\0')
+		i++;
+	return (i);
 }

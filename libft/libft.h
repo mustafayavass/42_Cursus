@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:56:29 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/24 15:20:29 by myavas           ###   ########.fr       */
+/*   Updated: 2024/10/24 16:12:45 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define LIBFT_H
 
 #include <unistd.h>
+#include <stdlib.h>
 
 int ft_isalpha(int c);
 int ft_isascii(int c);
@@ -27,7 +28,7 @@ char    *ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int ft_strncmp(char *s1, char *s2, unsigned int n);
 void    *ft_memset(void *b, int c, size_t len);
-void    bzero(void *s, size_t n);
+void    ft_bzero(void *s, size_t n);
 void    *memcpy(void *restrict dst, const void *restrict src, size_t n);
 void    *memchr(const void *s, int c, size_t n);
 int memcmp(const void *s1, const void *s2, size_t n);
@@ -36,7 +37,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_atoi(const char *str);
-char    *ft_strdup(char *src);
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *src);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
