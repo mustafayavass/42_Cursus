@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 18:05:21 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/21 17:39:54 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/03 17:24:58 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
 
 void    *ft_memset(void *b, int c, size_t len)
 {
@@ -25,3 +25,5 @@ void    *ft_memset(void *b, int c, size_t len)
     }
     return b;
 }
+//Belirtilen başlangıç(*b) adresinden itibaren 
+//verilen bellek(len) bloğundaki her baytı belirtilen bir değerle(c) doldurur.

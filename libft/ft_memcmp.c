@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:07:43 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/21 17:38:54 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/03 17:24:47 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
 
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -30,3 +30,5 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     }
     return 0;
 }
+//İki bellek alanını belirli bir bayt sayısı kadar karşılaştırır ve eşitlik varsa 
+//0, farklılık varsa ascii karakter tablosuna göre farkını döndürür.

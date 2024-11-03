@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:58:11 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/21 17:37:56 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/03 15:11:49 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,4 @@ int ft_isdigit(int c)
     }
     return 0;
 }
+//Verilen bir karakterin rakam olup olmadığını kontrol eder.

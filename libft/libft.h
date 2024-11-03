@@ -6,15 +6,14 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:56:29 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/24 16:12:45 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/03 17:27:55 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
 
-#include <unistd.h>
-#include <stdlib.h>
+#include <stddef.h>
 
 int ft_isalpha(int c);
 int ft_isascii(int c);
@@ -29,9 +28,9 @@ char	*ft_strrchr(const char *s, int c);
 int ft_strncmp(char *s1, char *s2, unsigned int n);
 void    *ft_memset(void *b, int c, size_t len);
 void    ft_bzero(void *s, size_t n);
-void    *memcpy(void *restrict dst, const void *restrict src, size_t n);
-void    *memchr(const void *s, int c, size_t n);
-int memcmp(const void *s1, const void *s2, size_t n);
+void    *ft_memcpy(void *dst, const void *src, size_t n);
+void    *ft_memchr(const void *s, int c, size_t n);
+int ft_memcmp(const void *s1, const void *s2, size_t n);
 void    *ft_memmove(void *dst, const void *src, size_t len);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
@@ -46,6 +45,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putnbr_fd(int n, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);

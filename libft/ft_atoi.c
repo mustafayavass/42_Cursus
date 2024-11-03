@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:21:41 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/24 16:27:00 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/03 15:02:12 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,4 @@ int		ft_atoi(const char *str)
 	}
 	return (num * neg);
 }
+//Bir karakter dizisini(const char *str) tam sayıya(int) dönüştürür.
