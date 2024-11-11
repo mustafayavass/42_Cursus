@@ -6,11 +6,12 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:36:47 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/24 14:36:51 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:15:56 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static size_t	ft_countword(char const *s, char c)
 {

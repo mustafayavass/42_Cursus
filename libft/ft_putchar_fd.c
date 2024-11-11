@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:09:45 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 17:25:09 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:25:07 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,5 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+//Belirli bir karakteri belirli bir dosya tanımlayıcısına yazmak için kullanılır.
+//fd=file descriptor(dosya tanımlayıcısı))

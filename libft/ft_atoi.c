@@ -6,36 +6,35 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:21:41 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 15:02:12 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 16:07:33 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(const char *str)
-{
-	int neg;
-	int i;
-	int num;
+#include "libft.h"
 
-	i = 0;
-	neg = 1;
-	num = 0;
+int	ft_atoi(const char *str)
+{
+	int	i;
+	int	sign;
+	unsigned long int	result;
 	
-	if(!str)
-		return 0;
-	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v'
-			|| str[i] == '\f' || str[i] == '\r')
+	i = 0;
+	sign = 1;
+	result = 0;
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	if (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-')
 	{
-		if (str[i] == '-')
-			neg *= -1;
+		sign = -1;
 		i++;
 	}
-	while (str[i] >= 48 && str[i] <= 57)
+	else if (str[i] == '+')
+		i++;
+	while (ft_isdigit(str[i]))
 	{
-		num = num * 10 + (str[i] - 48);
+		result *= 10;
+		result += str[i] - '0';
 		i++;
 	}
-	return (num * neg);
+	return (result * sign);
 }
-//Bir karakter dizisini(const char *str) tam sayıya(int) dönüştürür.

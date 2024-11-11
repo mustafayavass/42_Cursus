@@ -6,11 +6,12 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:27:27 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 17:24:19 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:13:26 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
+#include <stdlib.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {

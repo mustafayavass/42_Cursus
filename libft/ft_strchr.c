@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:58:30 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/21 17:40:12 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:40:27 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
 
 char    *ft_strchr(const char *s, int c)
 {

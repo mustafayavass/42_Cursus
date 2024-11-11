@@ -6,11 +6,11 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:41:19 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 17:24:08 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:10:46 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void    ft_bzero(void *s, size_t n)
 {

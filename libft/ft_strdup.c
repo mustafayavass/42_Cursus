@@ -6,11 +6,12 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:31:02 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/24 16:11:25 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:14:09 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strdup(const char *src)
 {

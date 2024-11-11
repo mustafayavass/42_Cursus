@@ -6,11 +6,9 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:00:47 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/24 15:02:36 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 14:41:07 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

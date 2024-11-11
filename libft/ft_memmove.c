@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:18:20 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 17:24:54 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/11 16:56:50 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,31 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			count;
-	unsigned char	*dsts;
-	unsigned char	*srcs;
-
-	count = 0;
-	dsts = (unsigned char*)dst;
-	srcs = (unsigned char*)src;
-	if (src < dst)
+	if (dst == NULL || src == NULL || len == 0)
+        return (dst);
+	
+	char	*s;
+	char	*d;
+	size_t	i;
+	
+	s = (char *)src;
+	d = (char *)dst;
+	i = 0;
+	if (d > s)
 	{
-		len--;
-		while ((int)len >= 0)
-		{
-			dsts[len] = srcs[len];
-			len--;
-		}
+		while (len-- > 0)
+			d[len] = s[len];
 	}
 	else
-		while (count < len)
+	{
+		while (i < len)
 		{
-			dsts[count] = srcs[count];
-			count++;
+			d[i] = s[i];
+			i++;
 		}
+	}
 	return (dst);
 }
+
+//Bir bellek bloğunu başka bir bellek bloğuna belirtilen boyutta güvenli bir şekilde taşınmasını garanti eder. 
+//Bu da memcpy den farkını oluşturur.
