@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:48:53 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 17:12:01 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:14:31 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,15 @@ static size_t	get_digits(int n)
 	size_t	i;
 
 	i = 1;
-	while (n /= 10)//n sıfır olana kadar döngü devam edecek
+	while (n /= 10)
 		i++;
-	return i;
+	return (i);
 }
-//Verilen tam sayının kaç basamak içerdiğini hesaplar.
 
 char	*ft_itoa(int n)
 {
-	char		*str_num;
-	size_t		digits;
+	char	*str_num;
+	size_t	digits;
 	long int	num;
 
 	num = n;
@@ -48,4 +47,3 @@ char	*ft_itoa(int n)
 		*(str_num + 0) = '-';
 	return (str_num);
 }
-//Gelen tam sayıyı ASCII karater dizisine döndürür.(integer to ASCII)

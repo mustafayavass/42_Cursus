@@ -6,18 +6,18 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 18:12:10 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/11 14:15:03 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:53:26 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char    *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-    int		i;
-	int		len1;
-	int		len2;
+    int	i;
+	int	len1;
+	int	len2;
 	char	*str;
 
 	if (s1 && s2)

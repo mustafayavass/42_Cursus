@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:24:29 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/11 16:13:31 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:56:41 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
+	int	i;
 
 	i = ft_strlen(s);
 	while (i >= 0)

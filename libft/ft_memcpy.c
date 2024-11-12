@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 14:21:17 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/11 16:54:48 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:47:31 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void    *ft_memcpy(void *dst, const void *src, size_t n)
 {
-    size_t i;
+    size_t	i;
 
 	if (!dst && !src)
 		return (0);
@@ -26,5 +26,3 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-//Bir bellek bölgesinden başka bir bellek bölgesine belirlenen boyutta veri kopyalar.

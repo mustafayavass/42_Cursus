@@ -6,11 +6,13 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:16:15 by myavas            #+#    #+#             */
-/*   Updated: 2024/10/21 17:40:44 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 12:43:01 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(const char *s)
+#include <stddef.h>
+
+size_t	ft_strlen(const char *s)
 {
     int length;
     

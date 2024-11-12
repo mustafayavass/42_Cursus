@@ -6,16 +6,16 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:03:12 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 15:07:57 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:44:13 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') )
-    {
-        return 1;
-    }
-    return 0;
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
+		|| (c >= '0' && c <= '9'))
+	{
+		return (1);
+	}
+	return (0);
 }
-//Bir karakterin alfanumerik(A-Z, a-z, 0-9) olup olmadığını kontrol eder.

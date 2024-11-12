@@ -6,16 +6,13 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:41:19 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/11 14:10:46 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:41:35 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }
-
-//Belirtilen başlangıçtaki bellek alanını(void *s), belirli boyutta(size_t n) memset fonksiyonunu  
-//kullanarak sıfırlarla doldurur.

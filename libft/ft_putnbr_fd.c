@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:17:16 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/11 15:29:14 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:50:58 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,10 @@ void	ft_putnbr_fd(int n, int fd)
 			ft_putchar_fd('-', fd);
 			n = n * -1;
 		}
-		if (n > 9)
+		else if (n > 9)
 		{
 			ft_putnbr_fd(n / 10, fd);
 		}
 		ft_putchar_fd((n % 10) + '0', fd);
 	}
 }
-
-//Bir tamsayıyı  belirli bir dosya tanımlayıcısına yazdırmak için kullanılır.

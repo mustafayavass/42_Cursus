@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:39:30 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/11 14:43:03 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:55:56 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	unsigned long	i;
-	int				j;
+	int	j;
 
 	j = 0;
 	i = 0;

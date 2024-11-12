@@ -6,16 +6,15 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:58:11 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/03 15:11:49 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:44:59 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    if(c >= '0' && c <= '9')
-    {
-        return 1;
-    }
-    return 0;
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	return (0);
 }
-//Verilen bir karakterin rakam olup olmadığını kontrol eder.

@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:31:02 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/11 14:14:09 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 11:52:43 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*ft_strdup(const char *src)
 {
 	char	*str;
-	int		buf_size;
+	int	buf_size;
 
 	buf_size = ft_strlen(src) + 1;
 	str = malloc(buf_size);
