@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:48:53 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 13:14:31 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:44:11 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@ static size_t	get_digits(int n)
 
 	i = 1;
 	while (n /= 10)
+	{
 		i++;
+	}
 	return (i);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*str_num;
-	size_t	digits;
+	char		*str_num;
+	size_t		digits;
 	long int	num;
 
 	num = n;

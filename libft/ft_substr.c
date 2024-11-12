@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:42:51 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:57:50 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:40:30 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	count;
-	size_t	size;
-	char	*tab;
+	size_t count;
+	size_t size;
+	char *tab;
 
 	if (!s)
 		return (NULL);

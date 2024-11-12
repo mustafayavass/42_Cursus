@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:56:29 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 12:43:12 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:41:24 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 
 # include <stddef.h>
 
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isprint(int c);
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
-int	ft_toupper(int c);
-int	ft_tolower(int c);
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
-int	ft_atoi(const char *str);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isprint(int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_atoi(const char *str);
 
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);

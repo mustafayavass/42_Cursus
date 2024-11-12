@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:36:47 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:51:41 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:39:51 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ static size_t	ft_countword(char const *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	char	**lst;
-	size_t	word_len;
-	int		i;
+	char **lst;
+	size_t word_len;
+	int i;
 
 	lst = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
 	if (!s || !lst)

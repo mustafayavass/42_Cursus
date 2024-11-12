@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:21:41 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:49:49 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:38:53 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
+	int					i;
+	int					sign;
 	unsigned long int	result;
 
 	i = 0;

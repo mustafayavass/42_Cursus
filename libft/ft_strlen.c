@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:16:15 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 12:43:01 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:40:15 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-    int length;
-    
-    length = 0;
-    while ((s[length] != '\0'))
-    {
-        length++;
-    }
-    return length;
+	int length;
+
+	length = 0;
+	while ((s[length] != '\0'))
+	{
+		length++;
+	}
+	return (length);
 }

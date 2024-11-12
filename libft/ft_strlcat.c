@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:10:49 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:53:54 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:40:10 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	char	*s;
-	size_t	len_dst;
-	size_t	res;
-	size_t	len_src;
-	size_t	i;
+	char *s;
+	size_t len_dst;
+	size_t res;
+	size_t len_src;
+	size_t i;
 
 	s = (char *)src;
 	len_dst = ft_strlen(dst);

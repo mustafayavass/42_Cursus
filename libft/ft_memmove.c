@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:18:20 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:49:16 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:39:35 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	if (dst == NULL || src == NULL || len == 0)
-        return (dst);
-	
-	char	*s;
-	char	*d;
-	size_t	i;
+		return (dst);
+
+	char *s;
+	char *d;
+	size_t i;
 
 	s = (char *)src;
 	d = (char *)dst;

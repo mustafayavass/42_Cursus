@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:08:58 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:55:14 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:40:17 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*result;
-	size_t	i;
-	size_t	len;
+	char *result;
+	size_t i;
+	size_t len;
 
 	if (s == NULL || f == NULL)
 		return (NULL);
 	len = ft_strlen(s);
-	result = (char *) malloc((len + 1) * sizeof(char));
+	result = (char *)malloc((len + 1) * sizeof(char));
 	if (result == NULL)
 		return (NULL);
 	i = 0;

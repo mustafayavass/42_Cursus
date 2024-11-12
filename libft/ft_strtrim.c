@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:28:14 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:56:59 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:40:28 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	start;
-	int	end;
-	char	*str;
+	int start;
+	int end;
+	char *str;
 
 	if (!s1 || !set)
 		return (NULL);

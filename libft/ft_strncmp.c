@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:29:45 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 11:55:34 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 13:40:20 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	i;
+	unsigned int i;
 
 	if (n == 0)
 		return (0);
@@ -23,5 +23,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		i++;
 	}
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	;
 }
