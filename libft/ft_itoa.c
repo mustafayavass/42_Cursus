@@ -6,46 +6,53 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:48:53 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 13:44:11 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/12 14:43:37 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-static size_t	get_digits(int n)
+static int	ft_len(int n, int flag)
 {
-	size_t	i;
+	int	cont;
 
-	i = 1;
-	while (n /= 10)
+	cont = 0;
+	if (n == 0)
+		cont++;
+	while (n != 0)
 	{
-		i++;
+		n = n / 10;
+		cont++;
 	}
-	return (i);
+	if (flag < 0)
+		cont++;
+	return (cont);
 }
 
 char	*ft_itoa(int n)
 {
-	char		*str_num;
-	size_t		digits;
-	long int	num;
+	char	*str;
+	int		len;
+	int		sign;
+	long	n2;
 
-	num = n;
-	digits = get_digits(n);
-	if (n < 0)
-	{
-		num *= -1;
-		digits++;
-	}
-	if (!(str_num = (char *)malloc(sizeof(char) * (digits + 1))))
+	n2 = n;
+	if (n2 < 0)
+		sign = -1;
+	else
+		sign = 1;
+	n2 = n2 * sign;
+	len = ft_len(n2, sign);
+	str = (char *)malloc(sizeof(char) * len + 1);
+	if (!str)
 		return (NULL);
-	*(str_num + digits) = 0;
-	while (digits--)
+	str[len] = 0;
+	while (--len >= 0)
 	{
-		*(str_num + digits) = num % 10 + '0';
-		num = num / 10;
+		str[len] = 48 + (n2 % 10);
+		n2 = n2 / 10;
 	}
-	if (n < 0)
-		*(str_num + 0) = '-';
-	return (str_num);
+	if (sign == -1)
+		str[0] = '-';
+	return (str);
 }

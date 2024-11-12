@@ -15,10 +15,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int i;
-	int len1;
-	int len2;
-	char *str;
+	int		i;
+	int		len1;
+	int		len2;
+	char	*str;
 
 	if (s1 && s2)
 	{

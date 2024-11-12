@@ -15,7 +15,7 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJ)
+	ar rcs $@ $^
 
 clean:
 	$(RM) $(OBJS)
