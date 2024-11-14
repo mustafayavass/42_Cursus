@@ -6,56 +6,78 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:36:47 by myavas            #+#    #+#             */
-/*   Updated: 2024/11/12 13:39:51 by myavas           ###   ########.fr       */
+/*   Updated: 2024/11/14 15:14:55 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static size_t	ft_countword(char const *s, char c)
+static int	ft_count_word(char const *s, char c)
 {
-	size_t	count;
+	int	i;
+	int	word;
 
-	if (!*s)
-		return (0);
-	count = 0;
-	while (*s)
+	i = 0;
+	word = 0;
+	while (s && s[i])
 	{
-		while (*s == c)
-			s++;
-		if (*s)
-			count++;
-		while (*s != c && *s)
-			s++;
+		if (s[i] != c)
+		{
+			word++;
+			while (s[i] != c && s[i])
+				i++;
+		}
+		else
+			i++;
 	}
-	return (count);
+	return (word);
+}
+
+static int	ft_size_word(char const *s, char c, int i)
+{
+	int	size;
+
+	size = 0;
+	while (s[i] != c && s[i])
+	{
+		size++;
+		i++;
+	}
+	return (size);
+}
+
+static char	**ft_free(char **strs, int j)
+{
+	while (j-- > 0)
+		free(strs[j]);
+	free(strs);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**lst;
-	size_t	word_len;
 	int		i;
+	int		word;
+	char	**strs;
+	int		j;
 
-	lst = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
-	if (!s || !lst)
-		return (0);
 	i = 0;
-	while (*s)
+	j = 0;
+	word = ft_count_word(s, c);
+	strs = (char **)malloc((word + 1) * sizeof(char *));
+	if (!strs)
+		return (NULL);
+	while (j < word)
 	{
-		while (*s == c && *s)
-			s++;
-		if (*s)
-		{
-			if (!ft_strchr(s, c))
-				word_len = ft_strlen(s);
-			else
-				word_len = ft_strchr(s, c) - s;
-			lst[i++] = ft_substr(s, 0, word_len);
-			s += word_len;
-		}
+		while (s[i] == c)
+			i++;
+		strs[j] = ft_substr(s, i, ft_size_word(s, c, i));
+		if (!(strs[j]))
+			return (ft_free(strs, j));
+		i += ft_size_word(s, c, i);
+		j++;
 	}
-	lst[i] = NULL;
-	return (lst);
+	strs[j] = 0;
+	return (strs);
 }
