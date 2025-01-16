@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 14:22:53 by myavas            #+#    #+#             */
-/*   Updated: 2025/01/02 13:37:38 by myavas           ###   ########.fr       */
+/*   Updated: 2025/01/16 15:09:05 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1000
+#  define BUFFER_SIZE 20
 # endif
 
 # include <stdlib.h>

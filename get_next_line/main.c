@@ -6,26 +6,16 @@
 #include <fcntl.h>
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    int fd;
     char *line;
-
-    fd = open("test.txt", O_RDONLY | O_WRONLY  , 0777);
-    if (fd == -1)
-    {
-        perror("Dosya açılamadı");
-        return (1);
-    }
-
-    // Dosyadan satır satır okuma işlemi yapıyoruz
+    int fd;
+    fd = open("test.txt", O_RDONLY, 0777);
     while ((line = get_next_line(fd)) != NULL)
     {
-        printf("%s", line); // Satırı yazdırıyoruz
-        free(line);          // Satırın belleğini serbest bırakıyoruz
+        printf("%s\n",line);
+        free(line);
     }
-
     close(fd);
     
-    return (0);
 }
