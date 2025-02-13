@@ -6,7 +6,7 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 12:14:22 by myavas            #+#    #+#             */
-/*   Updated: 2025/02/06 12:22:21 by myavas           ###   ########.fr       */
+/*   Updated: 2025/02/13 15:16:01 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static int	ft_atoi(const char *str)
 	return (sign * result);
 }
 
-static void	send_signal(__pid_t id, char *message)
+static void	send_signal(pid_t id, char *message)
 {
 	int		i;
 	int		j;
@@ -63,7 +63,7 @@ static void	send_signal(__pid_t id, char *message)
 
 int	main(int argc, char *argv[])
 {
-	__pid_t	server_id;
+	pid_t	server_id;
 
 	if (argc == 3)
 	{
