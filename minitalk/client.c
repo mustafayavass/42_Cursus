@@ -6,11 +6,12 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 12:14:22 by myavas            #+#    #+#             */
-/*   Updated: 2025/02/13 15:16:01 by myavas           ###   ########.fr       */
+/*   Updated: 2025/04/11 13:13:53 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include <signal.h>
+#include <unistd.h>
 
 static int	ft_atoi(const char *str)
 {
@@ -29,15 +30,19 @@ static int	ft_atoi(const char *str)
 		i++;
 	}
 	result = 0;
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i])
 	{
+		if (str[i] < '0' || str[i] > '9')
+		{
+			return (-1);
+		}
 		result = (result * 10) + (str[i] - 48);
 		i++;
 	}
 	return (sign * result);
 }
 
-static void	send_signal(pid_t id, char *message)
+static void	send_signal(__pid_t id, char *message)
 {
 	int		i;
 	int		j;
@@ -63,12 +68,18 @@ static void	send_signal(pid_t id, char *message)
 
 int	main(int argc, char *argv[])
 {
-	pid_t	server_id;
+	__pid_t	server_id;
 
 	if (argc == 3)
 	{
 		server_id = ft_atoi(argv[1]);
-		send_signal(server_id, argv[2]);
+		if (server_id <= 0)
+			write(1, "Wrong PID!", 10);
+		else
+		{
+			send_signal(server_id, argv[2]);
+			send_signal(server_id, "\n");
+		}
 	}
 	else
 		write(1, "the requested number of arguments was not entered", 50);

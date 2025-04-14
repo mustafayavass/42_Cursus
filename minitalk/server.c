@@ -6,13 +6,14 @@
 /*   By: myavas <myavas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 12:14:18 by myavas            #+#    #+#             */
-/*   Updated: 2025/02/13 15:15:45 by myavas           ###   ########.fr       */
+/*   Updated: 2025/04/11 13:14:18 by myavas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include <signal.h>
+#include <unistd.h>
 
-static void	ft_putpid(pid_t n)
+static void	ft_putpid(__pid_t n)
 {
 	char	c;
 
@@ -47,15 +48,16 @@ static void	signal_handler(int signal)
 
 int	main(void)
 {
-	pid_t	server_id;
+	__pid_t	server_id;
 
 	server_id = getpid();
+	write(1, "Server PID: ", 11);
 	ft_putpid(server_id);
+	write(1, "\n", 1);
 	signal(SIGUSR1, signal_handler);
 	signal(SIGUSR2, signal_handler);
 	while (1)
 	{
-		pause();
 	}
 	return (0);
 }
